@@ -1,0 +1,213 @@
+$base-color: rgb(2, 67, 51);
+/*$secondary-color: rgb(183, 159, 80);*/
+$secondary-color: rgb(9, 117, 90);
+$text-color: rgb(65, 177, 74);
+
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+main {
+  background-color: $base-color;
+  width: 100%;
+}
+
+header {
+  height: 10rem;
+
+  background-color: $base-color;
+  color: white;
+  text-align: center;
+
+  .address {
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    background-color: $secondary-color;
+
+    a {
+      color: white;
+    }
+  }
+
+  .restaurant-name {
+    margin-top: 1.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-family: "Great Vibes";
+      font-size: 70px;
+      margin-right: 15px;
+    }
+    p {
+      margin-top: -7%;
+    }
+
+    a {
+      display: inline-block;
+      color: $text-color;
+    }
+  }
+}
+
+#landing-wrapper {
+  height: 40rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/img/chandi_bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  min-width: 100%;
+  opacity: 0.85;
+}
+
+nav {
+  background-color: $base-color;
+
+  text-align: center;
+  width: 100%;
+  display: flex;
+
+  #navbarNav {
+    justify-content: center;
+
+    .active {
+      color: white;
+    }
+
+    ul {
+      li {
+        padding: 0 2rem;
+        a {
+          color: $text-color;
+        }
+      }
+    }
+  }
+
+  .navbar-toggler-icon {
+    color: white;
+  }
+
+  .nav-link {
+    color: white;
+  }
+}
+
+/********** FOOTER ***********/
+footer {
+  height: 60px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  background-color: $secondary-color;
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-wrapper {
+    height: 70%;
+    text-align: center;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: white;
+
+    .icon-container {
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      margin-left: 15px;
+
+      color: white;
+
+      a {
+        i {
+          font-size: 30px;
+          padding: 0 8px;
+        }
+
+        #mail {
+          margin-top: 2px;
+          margin-right: 10px;
+        }
+        color: rgb(255, 255, 255);
+      }
+    }
+
+    .footer-links {
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+
+      position: absolute;
+      right: 0;
+      top: 8px;
+
+      button {
+        margin-left: 20px;
+        margin-top: -5%;
+      }
+    }
+  }
+}
+
+#intro {
+  height: 430px;
+  background-color: rgb(252, 246, 246);
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  p {
+    margin: 10%;
+    background-color: yellow;
+  }
+}
+
+.center-column {
+  background-color: $base-color;
+  grid-template-rows: 60% 40%;
+
+  color: white;
+
+  img {
+    width: auto;
+    height: auto;
+    opacity: 0.8;
+  }
+
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#author {
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  a {
+    font-size: 14px;
+    color: white;
+  }
+}
